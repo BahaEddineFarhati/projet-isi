@@ -10,9 +10,6 @@
     
 }
 
-:root{
-
-}
 
 
 #bg{
@@ -37,21 +34,63 @@ nav{
     color : white;
 }
 
-.sec_title{
+.dash_btn{
     list-style-type:none;
+}
+
+.sec_title{
+
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    padding: 40px;
+    padding: 25px;
     gap: 40px;
     width: 150px;
     height: 56px;
     position: relative;
 
-
+    transition: .05s;
    
     
 }
+
+.sec_title:hover {
+
+    width: 150px;
+    height: 56px;
+    padding : 18px;
+
+    background: linear-gradient(101.05deg, #1F8EBE -5.36%, #440495 29.46%, #440495 56.03%, #B102CD 81.92%);
+    border-radius: 16px;
+}
+
+
+.sec_title:hover i{
+    animation: shake .5s;
+}
+
+@keyframes shake {
+    0% {
+      transform: translateX(0);
+    }
+    20% {
+      transform: translateX(5px);
+    }
+    40% {
+      transform: translateX(-5px);
+    }
+    60% {
+      transform: translateX(5px);
+    }
+    80% {
+      transform: translateX(-5px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+
 
 
 
@@ -64,7 +103,7 @@ font-style: normal;
 font-weight: 500;
 font-size: 18px;
 line-height: 22px;
-transition: .05s;
+/*transition: .05s;*/
 
 
 
@@ -78,15 +117,9 @@ flex-grow: 0;
 }
 
 
-.sec_title a:hover {
-    position: absolute;
-    width: 150px;
-    height: 56px;
-    padding : 18px;
 
-    background: linear-gradient(101.05deg, #1F8EBE -5.36%, #440495 29.46%, #440495 56.03%, #B102CD 81.92%);
-    border-radius: 16px;
-}
+
+
 
 
 .btn_img{
