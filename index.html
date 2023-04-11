@@ -16,27 +16,40 @@
             <h2 id="title">formini.tn</h2>
         </div>
         <ul class="dash_btn">
-            <li><div class="sec_title">
+            <li class="page is-active "><div class="sec_title"  data-switcher data-tab="1" >
                 <i class="fa-solid fa-house " style="color: #ffffff;"></i>
-                <a href="#">home</a>
+                <h1>home</h1>
             </div></li>
-            <li><div class="sec_title">
-                <img src="" class="btn_img">
-                <a href="#">IT</a>
+            <li class="page"><div class="sec_title" data-switcher data-tab="2">
+                <i class="fa-solid fa-laptop-code" style="color: #ffffff;"></i>
+                <h1>Hardskills</h1>
             </div></li>
-            <li><div class="sec_title">
-                <img src="" class="btn_img">
-                <a href="#">softskills</a>
+            <li class="page"><div class="sec_title" data-switcher data-tab="3">
+                <i class="fa-solid fa-lightbulb" style="color: #ffffff;"></i>
+                <h1>Softskills</h1>
             </div></li>
-            <li><div class="sec_title">
-                <img src="" class="btn_img">
-                <a href="#">who we are</a>
+            <li class="page"><div class="sec_title" data-switcher data-tab="4">
+                <i class="fa-solid fa-right-to-bracket" style="color: #ffffff;"></i>
+                <h1>Log in</h1>
+            </div></li>
+            <li class="page"><div class="sec_title" data-switcher data-tab="5">
+                <i class="fa-solid fa-address-card" style="color: #ffffff;"></i>
+                <h1>About Us</h1>
             </div></li>
           </ul>
     </nav>
+    <main>
 
-    <section>
+        <section class="pages">
+            <div class="page is-active" data-page="1"><h2>1</h2></div>
+            <div class="page" data-page="2"><h2>2</h2></div>
+            <div class="page" data-page="3"><h2>3</h2></div>
+            <div class="page" data-page="4"><h2>4</h2></div>
+            <div class="page" data-page="5"><h2>5</h2></div>
+        </section>
 
-    </section>
+    </main>
+
+    <script src="index.js"></script>
 </body>
 </html>
