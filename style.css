@@ -55,7 +55,7 @@ nav{
     
 }
 
-.dash_btn .page.is-active .sec_title {
+.dash_btn .tab.is-active .sec_title {
 
     width: 200px;
     height: 56px;
@@ -174,4 +174,28 @@ section .page {
 
 section .page.is-active {
   display : block
+}
+
+
+.page.page.is-active{
+  display:flex;
+  padding:20px;
+}
+
+
+
+.cont{
+  /* Rectangle 39233 */
+
+
+/*position: absolute;*/
+width: 253px;
+height: 347px;
+/*left: 393px;
+top: 177px;*/
+
+background: rgba(255, 255, 255, 0.05);
+border-radius: 15px;
+
+margin: 20px;
 }

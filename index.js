@@ -6,7 +6,7 @@ window.onload = () => {
     
         const page_id = myButton.dataset.tab;
       myButton.addEventListener("click", function() {
-        document.querySelector('.dash_btn .page.is-active').classList.remove('is-active');
+        document.querySelector('.dash_btn .tab.is-active').classList.remove('is-active');
         myButton.parentNode.classList.add('is-active');
         SwitchPage(page_id)
       });
