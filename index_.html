@@ -7,15 +7,17 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Formini</title>
+    <script src="logout.js"></script>
     <script src="Pageselector.js"></script>
-    <script defer src="Session.js"></script>
 </head>
 <body>
+
     <img src="img/654.png" id="bg">
     <nav class="menu">
         <div class="title">
             <img src="" id="title_img">
             <h2 id="title">formini.tn</h2>
+            <h1>connected</h1>
         </div>
         <ul class="dash_btn">
             <li class="tab is-active "><div class="sec_title"  data-switcher data-tab="1" >
@@ -31,21 +33,32 @@
                 <h1>Softskills</h1>
             </div></li>
             <li class="tab"><div class="sec_title" data-switcher data-tab="4">
-                <i class="fa-solid fa-right-to-bracket" style="color: #ffffff;"></i>
-                <h1>Log in</h1>
+                <i class="fa-solid fa-user" style="color: #ffffff;"></i>
+                <h1>Profile</h1>
             </div></li>
             <li class="tab"><div class="sec_title" data-switcher data-tab="5">
                 <i class="fa-solid fa-address-card" style="color: #ffffff;"></i>
                 <h1>About Us</h1>
             </div></li>
+            <div class="sec_title" id="logout_but" data-switcher data-tab="6">
+                <i class="fa-solid fa-right-from-bracket" style="color: #ffffff;"></i>
+                <h1>Log Out</h1>
+            </div></li>
+            
           </ul>
+
+
+          
+
+
+
     </nav>
     <main>
 
         <section class="pages">
             <!-- page home -->
             <div class="page is-active" data-page="1">
-                <div class="cont" id="">
+                <div class="cont">
                     
                     <h1>test</h1>
                     <a href="#">click me !</a>
@@ -65,23 +78,16 @@
             <!-- page softskills -->
             <div class="page" data-page="3"><h2>3</h2></div>
 
-            <!-- page login -->
+            <!-- Profile login -->
             <div class="page" data-page="4" id="login">
-                <form action="post">
-                <h2>Email</h2>
-                <input type="text" required="required" placeholder="Email" class="textfield" id="Email">
-                <h2>Password</h2>
-                <input type="password" required="required" placeholder="Password" class="textfield" id="Password">
-                <div id="action">
-                <a id="post" href="javascript:Connect()">Log in</a>
-                
-                <a href="Acc.html" id="create">you don't have an account ?</a>
-                </div>
-                </form>
+                <h1>CONNECTED SUCC <3</h1>
             </div>
 
             <!-- page about us  -->
             <div class="page" data-page="5"><h2>5</h2></div>
+            <div class="page" data-page="6"><h2>
+                <a href="index.html">press me !</a>
+            </h2></div>
         </section>
 
     </main>
