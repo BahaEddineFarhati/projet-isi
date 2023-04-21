@@ -14,7 +14,6 @@ window.onload = () => {
 }
 
 function SwitchPage (page_id) {
-    console.log(page_id);
 
     const current_page = document.querySelector('.pages .page.is-active');
     current_page.classList.remove('is-active');
