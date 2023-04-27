@@ -15,8 +15,16 @@
 
 #bg{
     position: fixed;
-    width: 110vw;
+    width: 1920px;
     min-height: 100vh;
+}
+
+
+body{
+
+  
+
+  overflow-x: hidden;
 }
 
 nav{
@@ -162,7 +170,7 @@ flex-grow: 0;
 
 section {
     position: absolute;
-    width: 1072px;
+    width: 75%;
     height: 964px;
     left: 329px;
     top: 50px;
@@ -170,16 +178,22 @@ section {
     backdrop-filter: blur(5px);
     color:white;
     border-radius: 30px;
+    display : inline;
+    
+    
+    
 }
 
 
 section .page {
   display: none;
+
 }
 
 
 section .page.is-active {
-  display : block
+  display: flex;
+  flex-wrap: wrap;
 }
 
 
@@ -194,6 +208,66 @@ section .page.is-active {
   align-items: center;
 }
 
+.filtre{
+  position: relative;
+  display : flex ;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 30px;
+  padding: 10px;
+}
+
+
+/*.filtre::before
+{
+  content : '';
+  position: absolute;
+  right: 10px;
+  top : 15px;
+  z-index: 10000;
+  width: 8px;
+  height: 8px;
+  border : 2px solid #FFFFFF;
+  border-top: 2px solid rgba(255, 255, 255, 0.05);
+  border-right: 2px solid rgba(255, 255, 255, 0.05);
+  transform: rotate(-45deg);
+}*/
+
+.filtre input {
+  background-color: rgba(255, 255, 255, 0.05);
+  cursor: pointer;
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: none;
+  padding: 12px 20px;
+}
+
+.filtre .option{
+  margin: 20px;
+  background-color: rgba(255, 255, 255, 0.05) ;
+  border-radius: 10px;
+  width: 175px;
+  padding: 10px;
+  display: none;
+}
+
+.filtre .option div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  cursor: pointer;
+  border-radius: 7px;
+}
+
+.filtre .option div:hover {
+  background: linear-gradient(225deg, #18C8FF 14.89%, #933FFE 85.85%);
+}
+
 
 
 .cont{
@@ -204,8 +278,56 @@ top: 177px;*/
 
 background: rgba(255, 255, 255, 0.05);
 border-radius: 15px;
+padding: 20px;
+margin: 10px;
 
-margin: 20px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+text-align: center;
+}
+
+
+.cont h1{
+  font-family: 'Inter';
+  font-style:normal ;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+
+.cont img {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 10px;
+}
+
+
+.cont .desc {
+  font-size:13px ;
+}
+
+
+
+.cont .cont_btn {
+  background: linear-gradient(225deg, #18C8FF 14.89%, #933FFE 85.85%);
+border-radius: 10px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 100%;
+text-align: center;
+color: #FFFFFF;
+width: 96px;
+height: 40px;
+
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 25px;
 }
 
 
